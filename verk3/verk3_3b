@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="verk3_3bcss.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Sofia" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box header">
+            <h1>Rokk og Rómantík</h1>
+        </div>
+        <div class="navbar">
+            <a href="#home">Heim</a>
+            <a href="#news">Nýtt</a>
+            <div class="dropdown">
+                <button class="dropbtn">Fatnaður 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Peysur</a>
+                    <a href="#">Bolir</a>
+                    <a href="#">Buxur</a>
+                </div>
+            </div> 
+        </div>
+        <div class="box sidebar">
+            <h3>Opnunartími</h3>
+                <p>Mánud-föstud frá 11:00-18:00<br>
+                    Laugardaga frá 11:00-17:00<br>
+                Sunnudaga frá 13:00-17:00<br>
+                </p>
+        </div>
+        <div class="box sidebar2">
+            <h3>Verslunin okkar:</h3>
+            <p>Rokk & Rómantík<br>
+                Laugavegur 62<br>
+                101 Reykjavík<br>
+                S: 4454000<br>
+                VSK:107600<br>
+                KT: 680311-0640<br>
+                goth@goth.is</p>
+        </div>
+        <div class="box content">
+            <h3>Letur og litaval</h3>
+            <p>Ég valdi þessa liti því þeir endurspegla fatabúðina Rokk og Rómantík, þetta er hrátt en samt smá klassi yfir þessu. Svarthvítt og smá grár með.<br><br>
+            Letrið sem ég valdi í fyrirsagnir er Sofia, sem er klasískt script letur sem endurspeglar rómantíkina.<br>Svo valdi ég steinskriftarletur til að hafa meginmálið læsilegt og stýlhreint. Þar varð letrið Alegreya Sans fyrir valinu</p>
+        </div>
+        <div class="box footer">
+            <h6>© 2018 Ómar Freyr Róbertsson</h6>
+        </div>
+    </div>
+</body>    .sidebar {
+        grid-area: sidebar;
+    }
+
+  .navbar {
+        grid-area: navbar;
+    }
+
+
+    .sidebar2 {
+        grid-area: sidebar2;
+    }
+
+    .content {
+        grid-area: content;
+    }
+
+    .header {
+        grid-area: header;
+        text-align: center;
+        font-family: sofia;
+    }
+
+    .footer {
+        grid-area: footer;
+        text-align: center;
+    }
+
+    .wrapper {
+        background-color: #fff;
+        color: #444;
+    }
+
+  .wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "sidebar"
+        "content"
+        "sidebar2"
+        "footer"
+  }
+
+    @media only screen and (min-width: 500px)  {
+    .wrapper {
+
+        grid-template-columns: 20% auto;
+        grid-template-areas:
+            "header   header"
+            "navbar navbar"
+            "sidebar  content"
+            "sidebar2 sidebar2"
+            "footer   footer";
+    }
+    }
+
+    @media only screen and (min-width: 600px)   {
+        .wrapper {
+      grid-gap: 0px;
+            grid-template-columns: 240px auto 260px;
+            grid-template-areas:
+                "header  header  header"
+                "navbar navbar  navbar"
+                "sidebar content sidebar2"
+                "footer  footer  footer";
+     }
+  }
+
+.box {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  font-size: 150%; 
+}
+
+.header,
+.footer {
+  background-color: #000000;
+}
+
+.sidebar2 {
+  background-color: rgb(233, 212, 165);
+  color: #444;
+    font-size: 1em;
+    background-color: #ffffff;
+    font-family: Alegreya Sans
+}
+
+.sidebar {
+    background-color: #ffffff;
+    color: #444;
+    font-size: 1em; 
+    font-family: Alegreya Sans
+}
+
+.content{
+    font-size: 1.1em;
+    background-color: #000000;
+    font-family: Alegreya Sans;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333333;
+  font-family: Sofia;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
