@@ -1,7 +1,6 @@
 dt {
     color: rgb(246, 210, 136);
-    line-height: 2em;
-
+    line-height: 2em; 
 }
 
 .box {
@@ -14,14 +13,32 @@ dt {
   grid-template-areas: "verkefni" "navbar";
  }
 
-.box > h1{
-    
+dd a:link{
+    color:white;
+    text-decoration: none;
 }
+
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.greinagerd{
+  background: linear-gradient(rgb(246, 239, 210), rgb(246, 210, 136));
+  height: inherit;
+  padding: 20px 60px;
+  display:grid;
+  grid-template-columns: 50% 50%;
+  height: auto; 
+}
+
+.botn {
+  background-color: rgb(0, 100, 200);
+  color: white;
+  margin: 0px;
+  padding: 20px 60px; 
 }
 
 .footer{
@@ -49,9 +66,8 @@ body {
 
 h1 {
     font-family: 'Open Sans';
-    
-    
 }
+
 h4 {
     color: rgb(246, 210, 136);
     font-family: 'Open Sans';
@@ -66,6 +82,28 @@ li a:any-link {
 
 .meginmal {
   background: linear-gradient(rgb(246, 239, 210), rgb(246, 210, 136));
+  height: inherit;
+  padding: 20px 60px;
+}
+
+.meginmal2 {
+  background: linear-gradient(rgb(246, 239, 210), rgb(246, 210, 136));
+  height: inherit;
+  padding: 20px 60px;
+}
+.meginmal2 > h1{
+  text-align: center;
+   color: rgb(0, 100, 200); 
+}
+
+.meginmal3a {
+  background: linear-gradient(rgb(246, 210, 136), rgb(100, 200, 200));
+  height: inherit;
+  padding: 20px 60px;
+}
+
+.meginmal3b {
+  background: linear-gradient(rgb(100, 200, 200), rgb(246, 210, 136));
   height: inherit;
   padding: 20px 60px;
 }
@@ -116,7 +154,7 @@ blockquote {
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: rgb(246, 210, 136);
 }
 
 /* Dropdown content (hidden by default) */
@@ -147,4 +185,24 @@ blockquote {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+div.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border: 3px solid #73AD21;
+}
+
+.navbar2 {
+    padding: 10px 20px;
+    text-align: center;
+   background-color: rgb(0, 100, 200);
+    border-radius: 6px;
+}
+.navbar2 a {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
 }
