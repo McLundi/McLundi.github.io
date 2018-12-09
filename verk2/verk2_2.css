@@ -1,0 +1,9 @@
+.graennkassi{
+	display: block; padding: 1em; margin: 1em; border: 3px dashed green;
+}
+.blarkassi{
+	display: inline; padding: 1em; margin: 1em; border: 3px dashed blue; color: red;
+}
+.raudurkassi{
+	display: inline-block; padding: 1em; margin: 1em; border: 3px dashed red;
+}
